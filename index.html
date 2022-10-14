@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Qubit.-Figma</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/3000/figma-logo-256.png">
+</head>
+<body>
+<div class="card1">
+    <div id="clock"></div>
+    <script>
+        setInterval(() =>{
+            let date = new Date()
+            let clock = document.getElementById('clock')
+            clock.innerHTML =
+                date.getHours()+":"+
+                date.getMinutes()+":"+
+                date.getSeconds()
+        }, 1000);
+
+
+    </script>
+</div>
+<header>
+
+
+        <svg width="79" height="24" viewBox="0 0 79 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg1">
+            <path d="M0 0H79V24H0V0Z" fill="url(#pattern0)"/>
+            <defs>
+                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_1_105" transform="translate(-0.00632911) scale(0.00202532 0.00666667)"/>
+                </pattern>
+                <image id="image0_1_105" width="500" height="150" xlink:href="data:image/png;base64,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"/>
+            </defs>
+        </svg>
+        <nav>
+            <p class="p1">Why Qubit?</p>
+            <p class="p1">Products</p>
+            <p class="p1">Solutios</p>
+            <p class="p1">Customers</p>
+            <p class="p1">Case Studies</p>
+            <p class="p1">Resources</p>
+            <button type="button" class="btn">Login up</button>
+            <button type="button" class="btn55">Book a demo</button>
+        </nav>
+    </header>
+
+    <section>
+        <div class="ds">
+            <div class="ds1">
+                <p class="dsp">Driving growth with personalization.</p>
+                <div class="ds2">
+                <h2 class="hds">Make ecommerce</h2>
+                <h2 class="hds" style="color: #6F2DFF;">More personal.</h2>
+                </div>
+                <p class="dsp1">Hundreds of brands use Qubit CommerceAI  to power the next generation of product recommendations, badging and insights to build exceptional customer experiences.</p>
+
+                <div class="ds3">
+                    <input type="search"placeholder="Enter your email" class="inp1">
+                    <button type="button" class="btn6">Book a demo</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p class="p2">Trusted by world-class brands.</p>
+            <div class="di">
+            <img src="RectangleBarbour.jpg" alt="" class="img4">
+            <img src="Rectanglekate.png" alt="" class="img4">
+            <img src="Rectanglelvmh.png" alt="" class="img4">
+            <img src="Rectangleestee.png" alt="" class="img4">
+            <img src="Rectangletdx.png" alt="" class="img4">
+            <img src="Rectangleriver.png" alt="" class="img4">
+            <img src="Rectangleradisson.png" alt="" class="img4">
+            <img src="Rectanglestar.png" alt="" class="img4">
+            </div>
+            <p class="pi">Meet our customers ></p>
+        </div>
+        <div class="d1">
+            <div class="d2">
+            <h1 class="hd">Grow 2.5x faster than</h1>
+            <h1 class="hd">your competitors.</h1>
+            </div>
+
+            <div class="d3">
+                <button type="button" class="btn1">Book a demo</button>
+                <p class="pbut1">Meet our customers ></p>
+            </div>
+
+            <div class="d4">
+                <p class="p3">*PwC audited methodology.</p>
+                <p class="p3">Read the report</p>
+            </div>
+
+            <div class="card">
+            <div class="d5">
+                <img src="RectangleChiziq.png" alt="" class="img5">
+                <h1 class="h1">140%</h1>
+                <p class="p4">Qubit's top customers</p>
+                <p class="p4">annual growth rate.</p>
+            </div>
+
+                <div class="d5">
+                    <img src="RectangleChiziq.png" alt="" class="img5">
+                    <h1 class="h1">9.5m</h1>
+                    <p class="p4">Personalized experiences</p>
+                    <p class="p4">delivered every hour.</p>
+                </div>
+            </div>
+
+            <div class="card" style="margin-top: 230px">
+                <div class="d5">
+                    <img src="RectangleChiziq.png" alt="" class="img5">
+                    <h1 class="h1">$20bn</h1>
+                    <p class="p4">Online sales generated</p>
+                    <p class="p4">by our customers in 2020.</p>
+                </div>
+
+                <div class="d5">
+                    <img src="RectangleChiziq.png" alt="" class="img5">
+                    <h1 class="h1">4.4m</h1>
+                    <p class="p4">Shoppers influenced Lorem ipsum dolor sit a</p>
+                    <p class="p4">by Qubit every day.</p>
+                </div>
+            </div>
+
+            <div class="card" style="margin-top: 230px">
+                <div class="d5">
+                    <img src="RectangleChiziq.png" alt="" class="img5">
+                    <h1 class="h1">364</h1>
+                    <p class="p4">Ecommerce stores are</p>
+                    <p class="p4">growing faster with Qubit.</p>
+                </div>
+
+                <div class="d5">
+                    <img src="RectangleChiziq.png" alt="" class="img5">
+                    <h1 class="h1">$1.6bn</h1>
+                    <p class="p4">Incremental revenue generated Lorem ipsus</p>
+                    <p class="p4">by our customers in 2020.* Lorem ipsum.</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h1 class="h2">Qubit CommerceAI.</h1>
+        </div>
+        <div class="d6">
+            <div class="dv">
+                <img src="Vectorvector.png" alt="" style="margin-left: 150px">
+                <p class="p5">More insight</p>
+                <p class="p6">Learn which products drive performance and which don't, through automated insights you can action.</p>
+            </div>
+             <div class="dv">
+                <img src="Vectorqwerty.png" alt="" style="margin-left: 150px">
+                <p class="p5">More personal</p>
+                <p class="p6">Qubit CommerceAI generates a model per shopper to make every customer interaction more relevant.</p>
+            </div>
+             <div class="dv">
+                <img src="Vectorasdfgh.png" alt="" style="margin-left: 150px">
+                <p class="p5">More effective</p>
+                <p class="p6">Qubit fuses data, intent, and design tools to enable your team to create more effective customer experiences.</p>
+            </div>
+        </div>
+        <div class="d7">
+            <h1 class="h3">All the power. Easy to use.</h1>
+            <p class="p7">By collaborating with real ecommerce teams we've built the next-gen personalization tool. No code. No clunkiness.</p>
+            <img src="Rectanglezxcvbn.jpg" alt="" class="img6">
+            <div class="d8">
+            <button type="button" class="btn3">See products</button>
+            <button type="button" class="btn2">Book a demo</button>
+            </div>
+        </div>
+        <div class="dcard">
+            <h1 class="h4">What you can do with Qubit.</h1>
+            <div class="d9">
+                <div class="d10">
+                <img src="Vectorwsx.png" alt="" class="img7">
+                    <h2 class="h5">1:1 Product recommendations</h2>
+                    <p class="p8">Use deep learning recommendations to engage customers in seconds.</p>
+                </div>
+
+                <div class="d10">
+                    <img src="Vector44444.jpg" alt="" class="img7">
+                    <h2 class="h5">1:1 Product badging</h2>
+                    <p class="p8">Guide discovery with personalized product badging. Push sales with social proofing.</p>
+                </div>
+
+                <div class="d10">
+                    <img src="Vectorasdfgh.png" alt="" class="img7">
+                    <h2 class="h5">Personalized content</h2>
+                    <p class="p8">Your customers are unique. Present them with content that shows you know them.</p>
+                </div>
+            </div>
+
+            <div class="d11">
+                <div class="d10">
+                    <img src="Vectorvector.png" alt="" class="img7">
+                    <h2 class="h5">Product insights</h2>
+                    <p class="p8">A platform packed with insights helping you discover the hard hitting things you can do next.</p>
+                </div>
+
+                <div class="d10">
+                    <img src="Vector753.png" alt="" class="img7">
+                    <h2 class="h5">CommerceAI</h2>
+                    <p class="p8">Your customer's behavioral data is telling you a story. Use predictive and affinity based algorithms to serve them better.</p>
+                </div>
+
+                <div class="d10">
+                    <img src="Vector5624.png" alt="" class="img7">
+                    <h2 class="h5">Platform integrations</h2>
+                    <p class="p8">Connect Qubit to any tool via API. Import data or trigger an experience on any platform.</p>
+                </div>
+            </div>
+        </div>
+        <div class="d12">
+            <h1 class="h6">Trusted by leading brands.</h1>
+            <div class="d13">
+                <div class="d14">
+                    <img src="Rectangleclinique.jpg" alt="" class="img9">
+                    <img src="Rectanglebbbbbbb.png" alt="" class="img8">
+                    <p class="p9">Clinique builds relationships with millions of customers each year.</p>
+                </div>
+
+                <div class="d14">
+                    <img src="Rectangleqqqqqq.jpg" alt="" class="img9">
+                    <img src="Rectanglerrrrrrrrrr.jpg" alt="" class="img8">
+                    <p class="p9">River Island transforms the customer experience with personalization.</p>
+                </div>
+
+                <div class="d14">
+                    <img src="Rectangleeeeeeee.jpg" alt="" class="img9">
+                    <img src="Rectanglewwwwwww.jpg" alt="" class="img8">
+                    <p class="p9">MandM Direct drives increase in revenue with deep learning recs</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="d15">
+            <h1 class="h7">We specialize in your industry.</h1>
+            <p class="p10">Learn how we are delivering personalization at scale across sectors.</p>
+            <div class="d16">
+                <div class="d17">
+                    <div class="d18">
+                        <img src="https://cdn0.iconfinder.com/data/icons/hexagone-business-finance-set-1/128/FLIGHT-256.png" alt="" class="img10">
+                        <h2 class="h8">Beauty and cosmetics</h2>
+                    </div>
+                    <p class="p11">Discover relevant products. Push samples. Upsell and replenish.</p>
+                    <p class="p12">Explore our solutions for beauty and cosmetics.</p>
+                </div>
+
+                <div class="d17">
+                    <div class="d18">
+                        <img src="https://cdn3.iconfinder.com/data/icons/hexagon-office-business-set-2/135/60-512.png" alt="" class="img10">
+                        <h2 class="h8">Fashion</h2>
+                    </div>
+                    <p class="p11">Discover relevant products. Push samples. Upsell and replenish.</p>
+                    <p class="p12">Explore our solutions for beauty and cosmetics.</p>
+                </div>
+            </div>
+
+            <div class="d16">
+                <div class="d17">
+                    <div class="d18">
+                        <img src="https://cdn0.iconfinder.com/data/icons/hexagone-business-finance-set-1/128/FLIGHT-256.png" alt="" class="img10">
+                        <h2 class="h8">Luxury</h2>
+                    </div>
+                    <p class="p11">Discover relevant products. Push samples. Upsell and replenish.</p>
+                    <p class="p12">Explore our solutions for beauty and cosmetics.</p>
+                </div>
+
+                <div class="d17">
+                    <div class="d18">
+                        <img src="https://cdn3.iconfinder.com/data/icons/hexagon-office-business-set-2/135/60-512.png" alt="" class="img10">
+                        <h2 class="h8">Airlines</h2>
+                    </div>
+                    <p class="p11">Discover relevant products. Push samples. Upsell and replenish.</p>
+                    <p class="p12">Explore our solutions for beauty and cosmetics.</p>
+                </div>
+            </div>
+
+            <div class="d16">
+                <div class="d17">
+                    <div class="d18">
+                        <img src="https://cdn0.iconfinder.com/data/icons/hexagone-business-finance-set-1/128/FLIGHT-256.png" alt="" class="img10">
+                        <h2 class="h8">Travel & tourism</h2>
+                    </div>
+                    <p class="p11">Discover relevant products. Push samples. Upsell and replenish.</p>
+                    <p class="p12">Explore our solutions for beauty and cosmetics.</p>
+                </div>
+
+                <div class="d17">
+                    <div class="d18">
+                        <img src="https://cdn3.iconfinder.com/data/icons/hexagon-office-business-set-2/135/60-512.png" alt="" class="img10">
+                        <h2 class="h8">Online betting</h2>
+                    </div>
+                    <p class="p11">Discover relevant products. Push samples. Upsell and replenish.</p>
+                    <p class="p12">Explore our solutions for beauty and cosmetics.</p>
+                </div>
+            </div>
+        </div>
+        <div class="d19">
+            <div class="d20">
+                <h1 class="h9">A connected ecosystem.</h1>
+                <p class="p13">The Qubit personalization platform is designed with enterprise and high-growth businesses in mind.</p>
+                <p class="p14">Our open ecosystem approach means you can connect any data source and deliver personalization across any channel.</p>
+                <button type="button" class="btn4">See our integrations</button>
+            </div>
+            <img src="Rectanglennnnnnnnn.png" alt="" class="img11">
+        </div>
+        <div class="d21">
+            <h1 class="h10">Book a demo today.</h1>
+            <div class="d22">
+                <input type="search"placeholder="Enter your email">
+                <button type="button" class="btn5">Book a demo</button>
+            </div>
+        </div>
+        <div class="d23">
+            <img src="Rectangle1111111111.png" alt="" class="img12">
+            <p class="p15">Connect with us</p>
+            <div class="d24">
+                <img src="Vectorfacebook.png" alt="" class="img13">
+                <img src="Vectoryoutube.png" alt="" class="img13">
+                <img src="Vectortvitr.png" alt="" class="img13">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="fot1">
+            <div class="fot2">
+            <h2 class="fh1">Featured Capabilities</h2>
+            <p class="fp1">A/B testing</p>
+            <p class="fp1">Abandonment recovery</p>
+            <p class="fp1">Customer insights</p>
+            <p class="fp1">Customer polling and feedback</p>
+            <p class="fp1">Customer segmentation</p>
+            <p class="fp1">Data collection</p>
+            <p class="fp1">Ecommerce merchandising</p>
+            </div>
+
+            <div class="fot2">
+                <p class="fp1">Custom machine learning</p>
+                <p class="fp1">Journey Personalization</p>
+                <p class="fp1">Mobile app personalization</p>
+                <p class="fp1">Cross-channel personalization</p>
+                <p class="fp1">Social proofing</p>
+                <p class="fp1">Website personalization</p>
+            </div>
+
+            <div class="fot2">
+                <h2 class="fh1">Products</h2>
+                <p class="fp1">1:1 Product recommendations</p>
+                <p class="fp1">1:1 Product badging</p>
+                <p class="fp1">1:1 Journey personalization</p>
+                <p class="fp1">Personalized content</p>
+                <p class="fp1">Product insights</p>
+            </div>
+
+            <div class="fot2">
+                <h2 class="fh1">Resources</h2>
+                <p class="fp1">Resources</p>
+                <p class="fp1">Customers</p>
+                <p class="fp1">Qubit Blog.</p>
+                <p class="fp1">Glossary</p>
+            </div>
+
+            <div class="fot2">
+                <h2 class="fh1">Company</h2>
+                <p class="fp1">Why Qubit?</p>
+                <p class="fp1">About us</p>
+                <p class="fp1">Careers</p>
+                <p class="fp1">Press</p>
+                <p class="fp1">Contact</p>
+            </div>
+
+            <div class="fot2">
+                <p class="fp1">Working with us</p>
+                <p class="fp1">Legal</p>
+            </div>
+        </div>
+        <img src="Rectanglefotqu.png" alt="" class="imgf">
+        <p class="fp3">@ 2021 Qubit. All rights reserved.</p>
+        <img src="https://cdn2.iconfinder.com/data/icons/flat-pro-word-processing-set-5/32/translate-256.png" alt="" class="imgf1">
+    </footer>
+
+</body>
+</html>
